@@ -55,8 +55,8 @@ public class MissionServiceImplTest {
 		
 		@Test
 		public void testDeleteMission() {
-			ms.deleteMission(62);
-			Assert.assertNull(ms.retrieveMission(62));
+			ms.deleteMission(63);
+			Assert.assertNull(ms.retrieveMission(63));
 		}
 		
 		// 5 tests unitaires  
