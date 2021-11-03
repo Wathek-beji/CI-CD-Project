@@ -64,8 +64,8 @@ public class EmployeServiceImplTest {
 	
 	@Test
 	public void testDeleteEmploye() {
-		es.deleteEmpoye("48");
-		Assert.assertNull(es.retrieveEmploye("48"));
+		es.deleteEmpoye("49");
+		Assert.assertNull(es.retrieveEmploye("49"));
 	}
 	
 	// 5 tests unitaires  
