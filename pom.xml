@@ -9,10 +9,10 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>tn.esprit.spring</groupId>
-	<artifactId>timesheet-ci</artifactId>
+	<artifactId>ci-cd-project</artifactId>
 	<version>1.0</version>
-	<name>timesheet-ci</name>
-	<description>timesheet-ci</description>
+	<name>ci-cd-project</name>
+	<description>ci-cd-project</description>
 	<packaging>jar</packaging>
 
 	<properties>

@@ -19,11 +19,18 @@ pipeline {
             }
         }
         
-        stage("DEPLOY") {
+        stage("Deploy") {
             steps {
                 sh "mvn deploy -DskipTests"
             }
         }
+
+	stage("Docker") {
+            steps {
+                sh "ansible-playbook ansible/docker.yml -i ansible/inventory/host.yml"
+            }
+        }
+
     }
    
     post {
