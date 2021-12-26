@@ -1,0 +1,21 @@
+---
+# tasks file for docker
+
+ - name: create docker image
+   docker_image:
+      name: ci-cd-project
+      build:
+         path: /var/lib/jenkins/workspace/CI-CD-Project                 
+         pull: no
+      source: build
+      state: present
+      force_source: true
+ - name: run docker container
+   docker_container:
+      name: ci-cd-container
+      image: ci-cd-project:latest
+      state: started
+      recreate: true
+      ports:
+        - "8082:8082"
+
