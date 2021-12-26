@@ -3,7 +3,7 @@
 
  - name: create docker image
    docker_image:
-      name: ci-cd-project
+      name: wathekbeji/ci-cd-project
       build:
          path: /var/lib/jenkins/workspace/CI-CD-Project                 
          pull: no
@@ -13,7 +13,7 @@
  - name: run docker container
    docker_container:
       name: ci-cd-container
-      image: ci-cd-project:latest
+      image: wathekbeji/ci-cd-project:latest
       state: started
       recreate: true
       ports:
